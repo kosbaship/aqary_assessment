@@ -1,0 +1,4 @@
+enum DeveloperType {
+  residential,
+  commercial,
+}
