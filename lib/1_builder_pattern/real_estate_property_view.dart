@@ -9,27 +9,29 @@ class BuilderPatternView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Real Estate Property'),
-      ),
-      body: Center(
-        child: CustomPropertyBuilder()
-            .setName(
-              CustomTextBuilder("Luxury Villa")
-                  .fontSize(18.0)
-                  .fontWeight(FontWeight.bold)
-                  .build(),
-            )
-            .setDescription("Spacious 5-bedroom villa with a beautiful garden.")
-            .setPrice(
-              CustomTextBuilder("\$1,000,000").fontSize(16.0).build(),
-            )
-            .setLocation(
-              CustomTextBuilder("Los Angeles").fontSize(16.0).build(),
-            )
-            .setImage("https://example.com/villa.jpg")
-            .build(),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Real Estate Property'),
+        ),
+        body: Center(
+          child: CustomPropertyBuilder()
+              .setName(
+                CustomTextBuilder("Luxury Villa")
+                    .fontSize(18.0)
+                    .fontWeight(FontWeight.bold)
+                    .build(),
+              )
+              .setDescription("Spacious 5-bedroom villa with a beautiful garden.")
+              .setPrice(
+                CustomTextBuilder("\$1,000,000").fontSize(16.0).build(),
+              )
+              .setLocation(
+                CustomTextBuilder("Los Angeles").fontSize(16.0).build(),
+              )
+              .setImage("https://example.com/villa.jpg")
+              .build(),
+        ),
       ),
     );
   }

@@ -39,7 +39,7 @@ class RetryPolicyViewState extends State<RetryPolicyView> {
       // If it's not the last retry, wait for a moment before retrying
       if (retry < maxRetries) {
         await Future.delayed(
-            Duration(seconds: 5)); // Wait for 5 seconds between retries
+            const Duration(seconds: 5)); // Wait for 5 seconds between retries
       }
     }
 
