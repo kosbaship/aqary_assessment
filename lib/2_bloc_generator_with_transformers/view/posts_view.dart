@@ -5,20 +5,20 @@ import '../manager/posts_bloc.dart';
 import '../manager/posts_bloc_event.dart';
 import '../manager/posts_states.dart';
 
-class BlocGeneratorWithTransformers extends StatelessWidget {
-  const BlocGeneratorWithTransformers({super.key});
+class BlocGeneratorWithTransformersView extends StatelessWidget {
+  const BlocGeneratorWithTransformersView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => PostBloc(),
-      child: const BlocGeneratorWithTransformersView(),
+      child: const BlocGeneratorWithTransformersBody(),
     );
   }
 }
 
-class BlocGeneratorWithTransformersView extends StatelessWidget {
-  const BlocGeneratorWithTransformersView({super.key});
+class BlocGeneratorWithTransformersBody extends StatelessWidget {
+  const BlocGeneratorWithTransformersBody({super.key});
 
   @override
   Widget build(BuildContext context) {
