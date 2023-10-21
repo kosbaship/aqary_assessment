@@ -18,6 +18,8 @@ dependencies:
   flutter_bloc: ^8.0.1
   dio: ^5.0.8
   rxdart: ^0.26.0
+  equatable: ^2.0.5
+
 
 dev_dependencies:
   flutter_test:

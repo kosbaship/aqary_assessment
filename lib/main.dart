@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '1_builder_pattern/1_builder_pattern_view.dart';
+import '1_builder_pattern/builder_pattern_view.dart';
 
 void main() {
   runApp(

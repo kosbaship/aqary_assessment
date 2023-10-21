@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'constants.dart';
 import 'helper_ui_builders.dart';
 
 class BuilderPatternView extends StatelessWidget {

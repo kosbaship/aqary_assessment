@@ -73,7 +73,7 @@ class PropertyAd extends StatefulWidget {
   final String contactEmail;
   final String contactPhone;
 
-  PropertyAd({
+  const PropertyAd({super.key,
     required this.title,
     required this.price,
     required this.description,
@@ -96,7 +96,7 @@ class PropertyAdState extends State<PropertyAd> {
       children: [
         Image.network(widget.imageUrl, width: 200, height: 150),
         Text("Property Title: ${widget.title}",
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
         Text("Description: ${widget.description}"),
         Text("Location: ${widget.location}"),
         Text("Price: \$${widget.price.toStringAsFixed(2)}"),
